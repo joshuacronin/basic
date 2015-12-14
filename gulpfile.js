@@ -87,9 +87,7 @@ gulp.task('browser-sync', function() {
 
 	browserSync({
 		port: 8000,
-		server: {
-			baseDir: './'
-		},
+        proxy: '127.0.0.1:80',//The proxy
 		notify: false,
 		open: false,
 		ui: {
