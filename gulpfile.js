@@ -87,7 +87,9 @@ gulp.task('browser-sync', function() {
 
 	browserSync({
 		port: 8000,
-		proxy: "locahost"
+		proxy: {
+            target: "127.0.0.1"
+        },
 		notify: false,
 		open: false,
 		ui: {
